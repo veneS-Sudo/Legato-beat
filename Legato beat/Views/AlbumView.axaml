@@ -1,21 +1,12 @@
-<Window xmlns="https://github.com/avaloniaui"
+<UserControl xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:Legato_beat.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-		xmlns:view="using:Legato_beat.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="Legato_beat.Views.MainWindow"
-        Icon="/Assets/avalonia-logo.ico"
-        Title="Legato_beat"
+        x:Class="Legato_beat.Views.AlbumView"
+        Title="AlbumView"
 		TransparencyLevelHint="AcrylicBlur"
-		Background="Transparent"
-		ExtendClientAreaToDecorationsHint="True"
-		WindowStartupLocation="CenterScreen">
-
-	<Design.DataContext>
-		<vm:MainWindowViewModel/>
-	</Design.DataContext>
+		ExtendClientAreaToDecorationsHint="True">
 	<Panel>
 		<ExperimentalAcrylicBorder IsHitTestVisible="False">
 			<ExperimentalAcrylicBorder.Material>
@@ -26,8 +17,13 @@
 					MaterialOpacity="0.65"/>
 			</ExperimentalAcrylicBorder.Material>
 		</ExperimentalAcrylicBorder>
-		<Button Margin="40" HorizontalAlignment="Right" VerticalAlignment="Top" Command="{Binding OpenAlbumCommand}">
-			<PathIcon Data="{StaticResource gavel_regular}"/>
-		</Button>
+
+		<DockPanel>
+			<StackPanel DockPanel.Dock="Top">
+				<TextBox Text="{Binding SearchText}" Watermark="Search for Albums...." />
+				<ProgressBar IsIndeterminate="True" IsVisible="False" />
+			</StackPanel>
+		</DockPanel>
+		
 	</Panel>
-</Window>
+</UserControl>
