@@ -1,13 +1,17 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:sty="using:FluentAvalonia.Styling"
+			 xmlns:ui="using:FluentAvalonia.UI.Controls"
+             xmlns:uip="using:FluentAvalonia.UI.Controls.Primitives"
              xmlns:local="using:Legato_beat"
              x:Class="Legato_beat.App">
     <Application.DataTemplates>
         <local:ViewLocator/>
     </Application.DataTemplates>
-
+	
     <Application.Styles>
+		<sty:FluentAvaloniaTheme />
         <FluentTheme Mode="Light"/>
-		<StyleInclude Source="/Icons.axaml"/> 
+		<StyleInclude Source="avares://Legato beat/Icons.axaml"/> 
     </Application.Styles>
 </Application>
