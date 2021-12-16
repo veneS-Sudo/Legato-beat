@@ -1,11 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-
+using Legato_beat.ViewModels;
+using ReactiveUI;
 namespace Legato_beat.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        public string Greeting => "Welcome to Avalonia!";
+        
     }
 }

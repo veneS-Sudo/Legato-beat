@@ -1,9 +1,18 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:Legato_beat.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:view="using:Legato_beat.Views"
+        xmlns:vm="using:Legato_beat.ViewModels"
+		xmlns:ui="clr-namespace:FluentAvalonia.UI.Controls;assembly=FluentAvalonia"
+        xmlns:uip="clr-namespace:FluentAvalonia.UI.Controls.Primitives;assembly=FluentAvalonia"
+		xmlns:pg="clr-namespace:FluentAvaloniaSamples.Pages;assembly=FluentAvaloniaSamples"
+        xmlns:sys="using:System" 
+        xmlns:core="using:FluentAvalonia.Core"
+        xmlns:sty="using:FluentAvalonia.Styling"
+        xmlns:wnd="using:FluentAvalonia.UI.Core"
+        xmlns:media="using:FluentAvalonia.UI.Media"
+		xmlns:input="using:FluentAvalonia.UI.Input"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Legato_beat.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
@@ -21,13 +30,16 @@
 			<ExperimentalAcrylicBorder.Material>
 				<ExperimentalAcrylicMaterial
 					BackgroundSource="Digger"
-					TintColor="white"
+					TintColor="White"
 					TintOpacity="1"
 					MaterialOpacity="0.65"/>
 			</ExperimentalAcrylicBorder.Material>
 		</ExperimentalAcrylicBorder>
-		<Button Margin="40" HorizontalAlignment="Right" VerticalAlignment="Top" Command="{Binding OpenAlbumCommand}">
-			<PathIcon Data="{StaticResource gavel_regular}"/>
-		</Button>
+		
+		<DockPanel>
+			<view:NavigationPanel DockPanel.Dock="Left"/>
+			<view:AlbumView/>
+		</DockPanel>
+		
 	</Panel>
 </Window>
