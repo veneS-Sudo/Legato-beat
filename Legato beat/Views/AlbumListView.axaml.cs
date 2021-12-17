@@ -1,14 +1,13 @@
-using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
 namespace Legato_beat.Views
 {
-    public partial class AlbumView : UserControl
+    public partial class AlbumListView : UserControl
     {
-        public AlbumView()
+        public AlbumListView()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void InitializeComponent()
