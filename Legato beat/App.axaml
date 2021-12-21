@@ -12,6 +12,7 @@
     <Application.Styles>
 		<sty:FluentAvaloniaTheme />
         <FluentTheme Mode="Light"/>
+		<StyleInclude Source="avares://Legato beat/Assets/Icons" />
 		<StyleInclude Source="avares://Legato beat/Icons.axaml"/> 
     </Application.Styles>
 </Application>

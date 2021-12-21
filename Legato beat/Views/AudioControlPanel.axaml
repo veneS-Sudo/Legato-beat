@@ -16,7 +16,7 @@
 		</Panel.Styles>
 		<StackPanel Orientation="Horizontal">
 			<Button Name="ShuffleButton" Width="36">
-				<DrawingPresenter Width="20" Height="15" VerticalAlignment="Center" HorizontalAlignment="Center" />
+				<PathIcon Data="/Assets/Icons/shuffle_icon.svg" Width="20" Height="15" VerticalAlignment="Center" HorizontalAlignment="Center" />
 			</Button>
 			<Button Name="BackButton" HorizontalAlignment="Center" Width="36" Command="{Binding BackCommand}">
 				<PathIcon Data="{StaticResource Previous}" Width="20" Height="10" VerticalAlignment="Center" HorizontalAlignment="Center" />
