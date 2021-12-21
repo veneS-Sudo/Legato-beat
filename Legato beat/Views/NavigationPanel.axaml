@@ -13,18 +13,17 @@
 					IsPaneToggleButtonVisible="True"
 				IsBackButtonVisible="False" AlwaysShowHeader="True">
 			<ui:NavigationView.MenuItems>
-				<ui:NavigationViewItem Content="Library" Icon="Library"/>
-				<ui:NavigationViewItem Content="Track"/>
-				<ui:NavigationViewItem Content="Author" />
-				<ui:NavigationViewItem Content="Album" />
-				<ui:NavigationViewItem Content="Playlist" />
+				<ui:NavigationViewItem Content="Библиотека" Icon="Library"/>
+				<ui:NavigationViewItem Content="Треки"/>
+				<ui:NavigationViewItem Content="Автор" />
+				<ui:NavigationViewItem Content="Альбомы" />
+				<ui:NavigationViewItem Content="Плейлисты" />
 			</ui:NavigationView.MenuItems>
 
 			<ui:NavigationView.AutoCompleteBox>
-				<AutoCompleteBox Watermark="Search" IsDropDownOpen="True"/>
+				<AutoCompleteBox Watermark="Поиск" IsDropDownOpen="True"/>
 			</ui:NavigationView.AutoCompleteBox>
 
-			
 		</ui:NavigationView>
 	</ScrollViewer>
 </UserControl>

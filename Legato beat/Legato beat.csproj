@@ -5,7 +5,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
   <ItemGroup>
@@ -13,8 +12,16 @@
     <PackageReference Include="Avalonia.Desktop" Version="0.10.10" />
     <PackageReference Include="Avalonia.Diagnostics" Version="0.10.10" />
     <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.10" />
-    <PackageReference Include="CSCore" Version="1.2.1.2" />
     <PackageReference Include="FluentAvaloniaUI" Version="1.1.6" />
     <PackageReference Include="LiteDB" Version="5.0.11" />
+    <PackageReference Include="NetCoreAudio" Version="1.6.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\AlbumListView.axaml.cs">
+      <DependentUpon>AlbumListView.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Icons\" />
   </ItemGroup>
 </Project>

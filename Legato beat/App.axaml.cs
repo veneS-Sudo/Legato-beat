@@ -3,6 +3,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Legato_beat.ViewModels;
 using Legato_beat.Views;
+using NetCoreAudio;
 
 namespace Legato_beat
 {

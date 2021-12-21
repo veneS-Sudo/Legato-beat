@@ -4,10 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:view="using:Legato_beat.Views"
         xmlns:vm="using:Legato_beat.ViewModels"
-		xmlns:ui="clr-namespace:FluentAvalonia.UI.Controls;assembly=FluentAvalonia"
-        xmlns:uip="clr-namespace:FluentAvalonia.UI.Controls.Primitives;assembly=FluentAvalonia"
-		xmlns:pg="clr-namespace:FluentAvaloniaSamples.Pages;assembly=FluentAvaloniaSamples"
-        xmlns:sys="using:System" 
+		
         xmlns:core="using:FluentAvalonia.Core"
         xmlns:sty="using:FluentAvalonia.Styling"
         xmlns:wnd="using:FluentAvalonia.UI.Core"
@@ -37,6 +34,9 @@
 		</ExperimentalAcrylicBorder>
 		
 		<DockPanel>
+			<Panel Background="Gray" DockPanel.Dock="Bottom">
+				<view:AudioControlPanel HorizontalContentAlignment="Center"/>
+			</Panel>
 			<view:NavigationPanel DockPanel.Dock="Left"/>
 			<view:AlbumView/>
 		</DockPanel>

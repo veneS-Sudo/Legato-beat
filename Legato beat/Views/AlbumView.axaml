@@ -4,5 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Legato_beat.Views.AlbumView">
-  Welcome to Avalonia!
+
+	<StackPanel Orientation="Vertical">
+		<Image MaxWidth="250" MaxHeight="250" 
+			   Source="avares://Legato beat/Assets/avalonia-logo.ico" Tag="album image"/>
+		<Label Content="" Tag="album name" />
+		<TextBlock Text="" Tag="artist name" />
+		<TextBlock Text="" Tag="year" />
+	</StackPanel>
 </UserControl>
