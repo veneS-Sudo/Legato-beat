@@ -11,7 +11,7 @@ namespace Legato_beat.Models.Queue
         ObservableCollection<IAudioItem> AudioItems { get; }
 
         event QueueEndedEventHandler QueueEnded;
-        event QueueEndedEventHandler QueueChanged;
+        event QueueChangedEventHandler QueueChanged;
         /// <summary>
         /// if the queue has next audio item
         /// </summary>
@@ -25,12 +25,12 @@ namespace Legato_beat.Models.Queue
         /// <summary>
         /// get the next audio item
         /// </summary>
-        IAudioItem Next { get; }
+        IAudioItem? Next { get; }
 
         /// <summary>
         /// get the previous audio item
         /// </summary>
-        IAudioItem Previous { get; }
+        IAudioItem? Previous { get; }
 
         /// <summary>
         /// if the queue has a audio item it can currently play
@@ -40,6 +40,8 @@ namespace Legato_beat.Models.Queue
         /// <summary>
         /// get the current audio item from queue
         /// </summary>
-        IAudioItem Current { get; }
+        IAudioItem? Current { get; set; }
+
+        int CurrentIndex { get; set; }
     }
 }
